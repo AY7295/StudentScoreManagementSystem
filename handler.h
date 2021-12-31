@@ -33,7 +33,7 @@ void AddStudentInfo()
 			break;
 		i[0]++;
 		if(tooManyInputError(i[0]))return;
-		colorPrint("请正确输入学号：", red);
+		
 	}
 
 	//输入姓名
@@ -61,7 +61,7 @@ void AddStudentInfo()
 		}
 		i[1]++;
 		if(tooManyInputError(i[1]))return;
-		colorPrint("请正确输入性别：", red);
+		
 	}
 
 	//输入语文成绩
@@ -75,7 +75,7 @@ void AddStudentInfo()
 		i[2]++;
 		if (tooManyInputError(i[2]))
 		return;
-		colorPrint("请正确输入语文成绩：", red);
+		
 	}
 
 	//输入数学成绩
@@ -88,7 +88,7 @@ void AddStudentInfo()
 			break;
 		i[3]++;
 		if(tooManyInputError(i[3]))return;
-		colorPrint("请正确输入数学成绩：", red);
+		
 	}
 
 	//输入英语成绩
@@ -101,7 +101,7 @@ void AddStudentInfo()
 			break;
 		i[4]++;
 		if(tooManyInputError(i[4]))return;
-		colorPrint("请正确输入英语成绩：", red);
+
 	}
 
 	//计算总成绩
@@ -131,7 +131,7 @@ void DeleteStudentInfo(Node *L)
 			break;
 		a++;
 		if (tooManyInputError(a))return;
-		colorPrint("请正确输入学号：", red);
+		
 	}
 
 	Node *student = queryStudentInfoById(id, L);
@@ -175,7 +175,7 @@ void UpdateStudentInfo(Node *L)
 			break;
 		i[0]++;
 		if (tooManyInputError(i[0]))return;
-		colorPrint("请正确输入学号：", red);
+	
 	}
 
 	Node *student = queryStudentInfoById(id, L);
@@ -213,7 +213,7 @@ void UpdateStudentInfo(Node *L)
 			}
 			a++;
 			if(tooManyInputError(a))return;
-			colorPrint("!!请重新输入：", red);
+			
 		}
 
 
@@ -249,7 +249,7 @@ void UpdateStudentInfo(Node *L)
 				i[1]++;
 				
 				if(tooManyInputError(i[1]))return;
-				colorPrint("请正确输入性别：", red);
+				
 			}
 			break;
 
@@ -263,7 +263,7 @@ void UpdateStudentInfo(Node *L)
 					break;
 				i[2]++;
 				if(tooManyInputError(i[2]))return;
-				colorPrint("请正确输入语文成绩：", red);
+				
 			}
 			break;
 
@@ -277,7 +277,7 @@ void UpdateStudentInfo(Node *L)
 					break;
 				i[3]++;
 				if(tooManyInputError(i[3]))return;
-				colorPrint("请正确输入数学成绩：", red);
+				
 			}
 			break;
 
@@ -291,7 +291,7 @@ void UpdateStudentInfo(Node *L)
 					break;
 				i[4]++;
 				if(tooManyInputError(i[4]))return;
-				colorPrint("请正确输入英语成绩：", red);
+			
 			}
 			break;
 

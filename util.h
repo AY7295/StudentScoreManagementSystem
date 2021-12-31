@@ -78,7 +78,6 @@ int selectFunc(){
 			if (tooManyInputError(a))
 				exit(1);;
 			
-			colorPrint("!!请重新输入：", red);
 		}
 	return choice;
 }
@@ -138,6 +137,8 @@ int tooManyInputError (int a){
 	if (a>2)
 	{
 		colorPrint("\n ！！输入错误次数太多 ！！\n", red);
+	}else{
+		colorPrint("!请重新正确输入：",red);
 	}
 	return a>2;
 }
